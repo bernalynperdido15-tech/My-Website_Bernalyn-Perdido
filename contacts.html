@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contacts</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .brand {
+            position: fixed;
+            top: 20px;
+            left: 40px;
+            font-size: 20px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            z-index: 1100;
+        }
+
+        .contact-wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            width: 100%;
+            max-width: 900px;
+            margin-top: 40px;
+        }
+
+        .contact-wrapper .card:first-child {
+            align-self: center;
+            width: 100%;
+            max-width: 500px;
+        }
+
+        .info-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .info-grid .card {
+            flex: 1;
+            min-width: 250px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+
+<div class="brand">My Profile</div>
+
+<div class="navbar">
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="aboutme.html">About Me</a>
+        <a href="contacts.html">Contacts</a>
+        <a href="profile.html">Profile</a>
+    </div>
+</div>
+
+<div class="container">
+
+    <h1>Let's Connect</h1>
+    <p>
+        Whether you have questions, ideas or opportunities to share,
+        I would be happy to hear from you. Reach out anytime and I’ll respond as soon as possible.
+    </p>
+
+    <div class="contact-wrapper">
+
+        <div class="card">
+            <h2 style="margin-bottom:15px;">Send Me a Message</h2>
+            <form>
+                <input type="text" placeholder="Full Name" required>
+                <input type="email" placeholder="Email Address" required>
+                <input type="text" placeholder="Subject">
+                <textarea rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+
+        <div class="info-grid">
+
+            <div class="card">
+                <h3 style="margin-bottom:10px;">Contact Details</h3>
+                <p>Email: bernalyn@email.com</p>
+                <p>Phone: +63 934 000 1234</p>
+                <p>Location:San Francisco, Luna, Apayao, CAR</p>
+            </div>
+
+            <div class="card">
+                <h3 style="margin-bottom:10px;">Availability</h3>
+                <p>Monday - Friday</p>
+                <p>8:00 AM - 5:00 PM</p>
+                <p>Open for collaborations and projects</p>
+            </div>
+
+            <div class="card">
+                <h3 style="margin-bottom:10px;">Social Links</h3>
+                <p><a href="#" style="text-decoration:none;">Facebook</a></p>
+                <p><a href="#" style="text-decoration:none;">Instagram</a></p>
+                <p><a href="#" style="text-decoration:none;">Telegram</a></p>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

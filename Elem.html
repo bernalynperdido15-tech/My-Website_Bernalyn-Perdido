@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementary Background</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background: #f5f5f5;
+            font-family: Arial, sans-serif;
+        }
+
+        .container-box {
+            background: white;
+            max-width: 700px;
+            width: 95%;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        .header-title {
+            background: linear-gradient(to right, #3b6cb7, #5a8bd6);
+            color: white;
+            text-align: center;
+            padding: 12px;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .section-title {
+            color: #3b6cb7;
+            font-weight: bold;
+            margin-top: 20px;
+            font-size: 16px;
+        }
+
+        .school-logo {
+            width: 70px;
+            height: 70px;
+            object-fit: cover;
+            display: block;
+            margin: 15px auto;
+        }
+
+        .main-image,
+        .mission-img,
+        .vision-img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        .check-list {
+            list-style: none;
+            padding-left: 0;
+            font-size: 14px;
+        }
+
+        .check-list li::before {
+            content: "✔ ";
+            color: #3b6cb7;
+            font-weight: bold;
+        }
+
+        .hymn {
+            font-style: italic;
+            color: #555;
+            margin-top: 15px;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        .hymn h3 {
+            font-size: 16px;
+        }
+
+        @media (max-width: 576px) {
+            .header-title {
+                font-size: 16px;
+                padding: 10px;
+            }
+
+            .section-title {
+                font-size: 15px;
+            }
+
+            .school-logo {
+                width: 60px;
+                height: 60px;
+            }
+
+            .hymn {
+                font-size: 13px;
+            }
+
+            .hymn h3 {
+                font-size: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container-box">
+
+    <h4 class="text-center mt-3">My Elementary School</h4>
+
+    <div class="header-title">
+        San Francisco Elementary School
+    </div>
+
+    <img src="elemlogo.jpg" alt="School Logo" class="school-logo">
+
+    <div class="p-3">
+
+        <img src="elem.jpg" class="main-image" alt="School Image">
+
+        <h5 class="section-title">Mission & Vision</h5>
+        <img src="mission.jpg" alt="Mission Image" class="mission-img">
+        <img src="vision.jpg" alt="Vision Image" class="vision-img">
+
+        <h5 class="section-title">Awards & Achievements</h5>
+        <ul class="check-list">
+            <li>Spelling Bee Champion</li>
+            <li>Second Princess</li>
+            <li>Outstanding Student Award</li>
+        </ul>
+
+        <h5 class="section-title text-center">Graduation Photo</h5>
+        <img src="elemgrad.jpg" class="main-image" alt="Graduation Photo">
+
+        <div class="hymn">
+            <h3>San Francisco Elementary School Hymn</h3><br>
+
+            San Francisco Elementary School,<br>
+            Our hearts belong to you,<br>
+            A place of hope and learning,<br>
+            Where dreams begin anew.<br><br>
+
+            With teachers who inspire us<br>
+            And friends who stand so true,<br>
+            We grow in strength and knowledge,<br>
+            In everything we do.<br><br>
+
+            We promise to be faithful,<br>
+            To values we uphold,<br>
+            With pride we raise your banner,<br>
+            Your story will be told.<br><br>
+
+            San Francisco Elementary School,<br>
+            We’ll carry you with pride,<br>
+            Your lessons guide our future,<br>
+            Forever by our side.
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>

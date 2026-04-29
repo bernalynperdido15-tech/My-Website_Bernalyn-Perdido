@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Profile</title>
+<link rel="stylesheet" href="style.css">
+<style>
+.brand{
+position:fixed;
+top:20px;
+left:40px;
+font-size:20px;
+font-weight:bold;
+letter-spacing:1px;
+z-index:1100;
+}
+
+.profile-section{
+display:flex;
+flex-wrap:wrap;
+align-items:center;
+justify-content:center;
+gap:40px;
+margin-top:40px;
+max-width:1000px;
+width:100%;
+text-align:left;
+}
+
+.profile-info{
+flex:1;
+min-width:280px;
+}
+
+.profile-img{
+width:220px;
+height:220px;
+object-fit:cover;
+border-radius:50%;
+}
+
+.profile-description{
+margin-top:15px;
+line-height:1.7;
+max-width:600px;
+}
+
+.skills-wrapper{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:30px;
+margin-top:40px;
+width:100%;
+max-width:1100px;
+}
+
+.skill-card{
+text-align:center;
+}
+
+.skill-card img{
+width:100%;
+height:160px;
+object-fit:cover;
+border-radius:8px;
+margin-bottom:15px;
+}
+
+.section-title{
+margin-top:70px;
+margin-bottom:30px;
+text-align:center;
+}
+
+.contact-wrapper{
+display:flex;
+justify-content:center;
+margin-top:40px;
+margin-bottom:80px;
+width:100%;
+}
+
+.contact-form{
+width:100%;
+max-width:700px;
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:20px;
+}
+
+.contact-form input,
+.contact-form textarea{
+padding:12px;
+border-radius:8px;
+border:none;
+background:#334155;
+color:white;
+}
+
+.contact-form textarea{
+grid-column:span 2;
+resize:none;
+}
+
+.contact-form button{
+grid-column:span 2;
+padding:12px;
+border:none;
+border-radius:8px;
+background:#38bdf8;
+color:white;
+cursor:pointer;
+}
+
+.contact-form button:hover{
+opacity:0.9;
+}
+</style>
+</head>
+<body>
+
+<div class="brand">My Portfolio</div>
+
+<div class="navbar">
+<div class="nav-links">
+<a href="index.html">Home</a>
+<a href="aboutme.html">About Me</a>
+<a href="contacts.html">Contacts</a>
+<a href="profile.html">Profile</a>
+</div>
+</div>
+
+<div class="container">
+
+<div class="profile-section">
+<img src="pic1.jpg" class="profile-img">
+<div class="profile-info">
+<h1>Perdido, Bernalyn</h1>
+<p class="profile-description" style="text-align: justify;">
+I am an Information Technology student who is interested in learning how to design and develop modern websites and applications. I enjoy creating simple, responsive and user-friendly web pages that people can easily use and understand. As a student, I am continuously improving my skills in coding and exploring new technologies in the IT field. I am also eager to gain more knowledge and experience so I can build better and more meaningful digital projects in the future.
+</p>
+</div>
+</div>
+
+<h1 class="section-title">My Skills</h1>
+
+<div class="skills-wrapper">
+
+<div class="card skill-card">
+<img src="basketball.jpg">
+<h3>Playing Basketball</h3>
+<p>I enjoy playing basketball as a way to stay active, improve my teamwork and develop my focus and coordination.</p>
+</div>
+
+<div class="card skill-card">
+<img src="cooking.jpg">
+<h3>Cooking</h3>
+<p>I have basic cooking skills that allow me to prepare simple meals and I am still learning to improve my knowledge in the kitchen.</p>
+</div>
+
+<div class="card skill-card">
+<img src="farming.jpg">
+<h3>Farming</h3>
+<p>I have experience in farming activities where I help take care of plants and learn how to grow crops properly.</p>
+</div>
+
+<div class="card skill-card">
+<img src="fishing.jpg">
+<h3>Fishing</h3>
+<p>I enjoy fishing as a patient activity where I learn how to catch fish and understand nature better.</p>
+</div>
+
+<div class="card skill-card">
+<img src="swim.jpg">
+<h3>Swimming</h3>
+<p>I can swim and I see it as an important skill for safety, fitness and recreation.</p>
+</div>
+
+</div>
+
+<h1 class="section-title">Contact Me</h1>
+
+<div class="contact-wrapper">
+<form class="card contact-form">
+<input type="text" placeholder="Full Name" required>
+<input type="email" placeholder="Email Address" required>
+<input type="text" placeholder="Subject">
+<textarea rows="5" placeholder="Your Message" required></textarea>
+<button type="submit">Send Message</button>
+</form>
+</div>
+
+</div>
+
+</body>
+</html>
